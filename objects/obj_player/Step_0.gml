@@ -74,6 +74,7 @@ if (place_meeting(x,y+sign(vsp),par_solid)){
                 
                 skin_xscale = 0.65
                 skin_yscale = 1.35
+                audio_play_sound(sfx_jump,0,false)
             }
         }
 }

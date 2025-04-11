@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"TSG Base Framework",
+  "%Name":"NNRUnderGround",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -38,7 +38,7 @@
   "MetaData":{
     "IDEVersion":"2024.13.0.190",
   },
-  "name":"TSG Base Framework",
+  "name":"NNRUnderGround",
   "resources":[
     {"id":{"name":"font_48","path":"fonts/font_48/font_48.yy",},},
     {"id":{"name":"obj_afterimage","path":"objects/obj_afterimage/obj_afterimage.yy",},},
@@ -59,6 +59,7 @@
     {"id":{"name":"scr_approach","path":"scripts/scr_approach/scr_approach.yy",},},
     {"id":{"name":"mus_test","path":"sounds/mus_test/mus_test.yy",},},
     {"id":{"name":"sfx_dash","path":"sounds/sfx_dash/sfx_dash.yy",},},
+    {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
     {"id":{"name":"sfx_walk","path":"sounds/sfx_walk/sfx_walk.yy",},},
     {"id":{"name":"spr_dash","path":"sprites/spr_dash/spr_dash.yy",},},
     {"id":{"name":"spr_fall","path":"sprites/spr_fall/spr_fall.yy",},},

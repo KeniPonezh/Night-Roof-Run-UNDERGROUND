@@ -43,3 +43,5 @@ timer = 0
 old_moving_x = 0
 
 pause_cd = 0
+
+instance_create_depth(x,y,depth,obj_fly)

@@ -34,7 +34,6 @@
     {"name":"inst_3D9D1FDA","path":"rooms/rm_framework/rm_framework.yy",},
     {"name":"inst_37AF24B6","path":"rooms/rm_framework/rm_framework.yy",},
     {"name":"inst_36F4B52C","path":"rooms/rm_framework/rm_framework.yy",},
-    {"name":"inst_4EBE05C2","path":"rooms/rm_framework/rm_framework.yy",},
     {"name":"inst_7A650501","path":"rooms/rm_framework/rm_framework.yy",},
     {"name":"inst_7F2D04D9","path":"rooms/rm_framework/rm_framework.yy",},
     {"name":"inst_4527C9A3","path":"rooms/rm_framework/rm_framework.yy",},
@@ -133,7 +132,6 @@
             {"$GMRInstance":"v2","%Name":"inst_5FC0E721","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5FC0E721","objectId":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},"propertyId":{"name":"strenght","path":"objects/obj_wind/obj_wind.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.8",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":7.5,"x":1984.0,"y":448.0,},
-            {"$GMRInstance":"v2","%Name":"inst_4EBE05C2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EBE05C2","objectId":{"name":"obj_fly","path":"objects/obj_fly/obj_fly.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":416.0,},
             {"$GMRInstance":"v2","%Name":"inst_62B9A846","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62B9A846","objectId":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},"propertyId":{"name":"strenght","path":"objects/obj_wind/obj_wind.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.8",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.5,"scaleY":5.5,"x":6944.0,"y":768.0,},
