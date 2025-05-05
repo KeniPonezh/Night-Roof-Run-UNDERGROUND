@@ -12,4 +12,7 @@ draw_set_font(noone)
 draw_set_color(c_white)
 
 draw_sprite(spr_hud_cd,0,8,SCREEN_HEIGHT - 128)
-draw_sprite_part(spr_hud_cd_value,0,sprite_get_bbox_left(spr_hud_cd_value),0,sprite_get_bbox_right(spr_hud_cd_value) / ability_cd * 2,sprite_get_bbox_bottom(spr_hud_cd_value),sprite_get_bbox_left(spr_hud_cd_value)+8,SCREEN_HEIGHT - 128)
+draw_sprite_part(spr_hud_cd_value,0,sprite_get_bbox_left(spr_hud_cd_value),0,(sprite_get_bbox_right(spr_hud_cd_value)) - (ability_cd/120) * sprite_get_bbox_right(spr_hud_cd_value),sprite_get_bbox_bottom(spr_hud_cd_value),sprite_get_bbox_left(spr_hud_cd_value)+8,SCREEN_HEIGHT - 128)
+
+//draw_sprite_part(spr_hud_cd_value,0,sprite_get_bbox_left(spr_hud_cd_value),0,(ability_cd/120) * sprite_get_bbox_right(spr_hud_cd_value),sprite_get_bbox_bottom(spr_hud_cd_value),sprite_get_bbox_left(spr_hud_cd_value)+8,SCREEN_HEIGHT - 128)
+//draw_sprite_part(spr_hud_cd_value,0,sprite_get_bbox_left(spr_hud_cd_value),0,sprite_get_bbox_right(spr_hud_cd_value) / ability_cd * 2,sprite_get_bbox_bottom(spr_hud_cd_value),sprite_get_bbox_left(spr_hud_cd_value)+8,SCREEN_HEIGHT - 128)

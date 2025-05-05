@@ -4,20 +4,42 @@ ability_cd = max(ability_cd-1,0)
 
 //moving var
 if (!allow_moving){
-    moving_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-    moving_y = keyboard_check(vk_down) - keyboard_check(vk_up);
+    moving_x = HOLD_RIGHT - HOLD_LEFT;
+    moving_y = HOLD_DOWN - HOLD_UP;
 }
 
 if (state=0){
-    if (place_meeting(x+moving_x,y,obj_solid) && !grounded && moving_x != old_moving_x){
-        vsp=2
-        skin_dir=-moving_x
-        if (keyboard_check_pressed(ord("A"))){
-            hsp=-6*moving_x
-            vsp=-wallcling_power
-            old_moving_x = moving_x
-            state_timer = 0
-            wallcling_power-=1
+    if (global.walljumpmode = 0){
+        if (place_meeting(x+moving_x,y,obj_solid) && !grounded && moving_x != old_moving_x){
+            vsp=2
+            skin_dir=-moving_x
+            if (JUMP){
+                hsp=-6*moving_x
+                vsp=-wallcling_power
+                old_moving_x = moving_x
+                state_timer = 0
+                wallcling_power-=1
+            }
+        }
+    }
+    else if (global.walljumpmode = 1){
+        if (place_meeting(x+2,y,par_solid) && dudeimgoingotkillmyself = -1|| place_meeting(x-2,y,par_solid) && dudeimgoingotkillmyself = 1) && (!grounded){
+            vsp=2
+            if (JUMP){
+                if (place_meeting(x+2,y,par_solid)) {
+                    dudeimgoingotkillmyself = -1
+                    x-=2
+                }
+                if (place_meeting(x-2,y,par_solid)) {
+                    dudeimgoingotkillmyself = 1
+                    x+=2
+                }
+                hsp=-6*moving_x
+                vsp=-wallcling_power
+                old_moving_x = moving_x
+                state_timer = 0
+                wallcling_power-=1
+            }
         }
     }
 }
@@ -68,12 +90,12 @@ if (place_meeting(x,y+sign(vsp),par_solid)){
         if (state = 0){
             vsp = 0
             grounded = true
-            if (grounded = true && vsp=0 && keyboard_check_pressed(ord("A"))){
+            if (grounded = true && vsp=0 && JUMP){
                 grounded = false
                 vsp = -jumpstr
                 
-                skin_xscale = 0.65
-                skin_yscale = 1.35
+                skin_xscale = 0.85
+                skin_yscale = 1.15
                 audio_play_sound(sfx_jump,0,false)
             }
         }
@@ -124,7 +146,7 @@ if (grounded){
     slopang += angle_difference(0,slopang)/5;
 }
 
-if (keyboard_check_pressed(ord("S")) && state=0 && ability_cd = 0 && moving_x!=0){
+if (DASH && state=0 && ability_cd = 0 && moving_x!=0){
     state_timer = 0
     state = 1
     ability_cd = 120

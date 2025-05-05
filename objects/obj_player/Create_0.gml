@@ -44,4 +44,6 @@ old_moving_x = 0
 
 pause_cd = 0
 
-instance_create_depth(x,y,depth,obj_fly)
+dudeimgoingotkillmyself = 0
+
+repeat 1 instance_create_depth(x,y,depth,obj_fly)
